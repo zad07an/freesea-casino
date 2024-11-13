@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+  @apply w-full h-full bg-primary-background text-white;
+}
+
+/* .blue-gradient {
+  background: linear-gradient(
+    91.43deg,
+    #dcebfe -10.58%,
+    #0183d1 -8.9%,
+    #0152c5 42.56%,
+    #07338d 115.68%
+  );
+} */
