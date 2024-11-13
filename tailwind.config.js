@@ -2,6 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      xs: "560px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       backgroundImage: {
         "blue-gradient": `linear-gradient(
@@ -25,6 +33,10 @@ export default {
           icon: "#A7B5CA",
           inactive: "#353C46",
         },
+      },
+      gridTemplateColumns: {
+        128: "repeat(auto-fill, minmax(128px, 1fr))",
+        200: "repeat(auto-fill, minmax(200px, 1fr))",
       },
     },
   },

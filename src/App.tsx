@@ -5,7 +5,7 @@ import { router } from "./router";
 
 export default function App() {
   return (
-    <main className="w-full max-w-[1920px] mx-auto">
+    <main className="w-full max-w-[1920px] mx-auto overflow-x-hidden">
       <Suspense fallback={<FullscreenLoading />}>
         <RouterProvider router={router} />
       </Suspense>

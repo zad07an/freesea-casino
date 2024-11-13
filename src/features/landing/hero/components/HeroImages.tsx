@@ -20,7 +20,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ delay: 1, duration: 1, type: "spring" }}
-        className="absolute -z-10 -right-4"
+        className="absolute -z-10 md:-right-4 md:top-auto xs:top-12 xs:right-20 top-14 -right-16"
         src={galaxyTab}
         alt="galaxy tab"
         width={363}
@@ -30,7 +30,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1, type: "spring" }}
-        className="absolute -right-10 bottom-20"
+        className="absolute md:-right-10 xs:right-16 -right-10 md:bottom-20 xs:bottom-0 -bottom-32"
         src={phone}
         alt="phone"
         width={159}
@@ -40,7 +40,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1, type: "spring" }}
-        className="absolute -z-20 top-20"
+        className="absolute -z-20 top-20 md:left-auto left-0"
         src={macbook}
         alt="phone"
         width={314}
@@ -52,7 +52,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, rotate: 180, y: 50 }}
         animate={{ opacity: 1, rotate: 0, scale: 1, y: 0 }}
         transition={{ delay: 0.5, type: "spring" }}
-        className="absolute left-28 top-24 z-10"
+        className="absolute md:left-28 left-10 md:top-24 top-6 z-10"
         src={cardano}
         alt="phone"
         width={49}
@@ -62,7 +62,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, rotate: 180, y: 50 }}
         animate={{ opacity: 1, rotate: 0, scale: 1, y: 0 }}
         transition={{ delay: 1, type: "spring" }}
-        className="absolute -z-20 -top-6 right-0"
+        className="absolute z-10 -top-6 right-0"
         src={etherium}
         alt="phone"
         width={58}
@@ -72,7 +72,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0, scale: 0.5, rotate: 180, y: 50 }}
         animate={{ opacity: 1, rotate: 0, scale: 1, y: 0 }}
         transition={{ delay: 1.5, type: "spring" }}
-        className="absolute -z-20 bottom-6"
+        className="absolute -z-10 md:bottom-6 xs:-bottom-20 -bottom-36"
         src={bitcoint}
         alt="phone"
         width={70}
@@ -84,7 +84,7 @@ export const HeroImages = ({ className }: Props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 3, type: "spring" }}
-        className="absolute -z-30 rotate-2 left-24 bottom-8"
+        className="absolute -z-30 rotate-2 md:left-24 md:bottom-8 sm:-bottom-16 xs:-bottom-24 -bottom-36 sm:left-6 left-0"
         src={curvedLines}
         alt="phone"
         width={628}
