@@ -4,7 +4,7 @@ import { ECOSYSTEM } from "../constants/ecosystem";
 export const Ecosystem = () => {
   return (
     <section className=" w-full h-fit pb-16 flex items-center justify-center px-5">
-      <div className=" w-full flex flex-col items-center gap-16 max-w-screen-lg rounded-[155px] border-[1.5px] border-[#8045E7] bg-[#161F2C] p-16">
+      <div className=" w-full flex flex-col items-center gap-16 max-w-screen-lg lg:rounded-[155px] md:rounded-[125px] sm:rounded-[95px] xs:rounded-[65px] rounded-[35px] border-[1.5px] border-[#8045E7] bg-[#161F2C] p-16">
         <h3 className=" font-black text-center text-[#8045E7] md:text-[32px] text-[28px] uppercase">
           Nesob Ecosystem
         </h3>

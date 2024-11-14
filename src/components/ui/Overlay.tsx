@@ -1,16 +1,27 @@
 import cn from "@/lib/utils";
-import { HTMLAttributes } from "react";
+import { MouseEvent, ReactNode } from "react";
 
-type Props = HTMLAttributes<HTMLElement>;
+type Props = {
+  onClose: () => void;
+  className?: string;
+  children: ReactNode;
+};
 
-export const Overlay = ({ className, children, ...props }: Props) => {
+export const Overlay = ({ className, children, onClose }: Props) => {
+  const onCloseOverlay = (e: MouseEvent<HTMLElement>) => {
+    const element = e.target as HTMLElement;
+    if (element.id !== "overlay") return;
+    onClose();
+  };
+
   return (
     <section
       className={cn(
-        "w-full h-dvh fixed z-50 left-0 top-0 backdrop-brightness-[0.2] grid place-items-center",
+        "w-full h-dvh fixed z-50 p-5 left-0 top-0 backdrop-brightness-[0.4] grid place-items-center",
         className
       )}
-      {...props}
+      id="overlay"
+      onClick={onCloseOverlay}
     >
       {children}
     </section>

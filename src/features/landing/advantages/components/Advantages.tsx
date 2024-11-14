@@ -20,7 +20,7 @@ export const Advantages = () => {
             every minute.
           </p>
         </div>
-        <div className=" w-full grid grid-cols-128 gap-10">
+        <div className=" w-full grid xs:grid-cols-128 gap-10">
           <ListItems
             items={ADVANTAGES}
             render={(item) => (

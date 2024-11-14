@@ -1,5 +1,7 @@
 import { Advantages } from "@/features/landing/advantages/components/Advantages";
+import { Coins } from "@/features/landing/coins/components/Coins";
 import { Ecosystem } from "@/features/landing/ecosystem/components/Ecosystem";
+import { FAQ } from "@/features/landing/faq/components/FAQ";
 import { Hero } from "@/features/landing/hero/components/Hero";
 import { HowItWorks } from "@/features/landing/how-it-works/components/HowItWorks";
 import { InfluencerProgram } from "@/features/landing/influencer-program/components/InfluencerProgram";
@@ -22,6 +24,8 @@ export default function HomePage() {
       </div>
       <Ecosystem />
       <RecentGames />
+      <FAQ />
+      <Coins />
     </section>
   );
 }

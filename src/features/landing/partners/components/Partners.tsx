@@ -29,10 +29,7 @@ export const Partners = () => {
                 src={item}
                 alt="coin 5"
                 style={{ zIndex: -(index * 2), left: `${index * 18}px` }}
-                className={cn(
-                  "absolute size-[30px] aspect-square",
-                  `left-[${index * 4}px]`
-                )}
+                className={cn("absolute size-[30px] aspect-square")}
               />
             )}
           />

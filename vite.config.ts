@@ -7,6 +7,9 @@ const root = path.resolve(__dirname, "src");
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  build: {
+    outDir: "build",
+  },
   resolve: {
     alias: {
       "@": root,

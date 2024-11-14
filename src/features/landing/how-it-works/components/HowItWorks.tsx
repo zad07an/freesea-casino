@@ -3,7 +3,7 @@ import { HOW_IT_WORKS_ITEMS } from "../constants/items";
 
 export const HowItWorks = () => {
   return (
-    <section className=" w-full h-fit py-24 flex flex-col items-center gap-8">
+    <section className=" w-full h-fit pt-24 pb-16 flex flex-col items-center gap-8">
       <div className=" w-fit max-w-lg flex flex-col items-center text-center gap-4">
         <h3 className=" text-[40px] font-black uppercase">How it works</h3>
         <p className=" font-[700]">

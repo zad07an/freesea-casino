@@ -1,6 +1,8 @@
 import cn from "@/lib/utils";
-import { createContext, HTMLAttributes, useContext } from "react";
+import { createContext, HTMLAttributes, ReactNode, useContext } from "react";
 import { Overlay } from "./Overlay";
+import { XButton } from "./XButton";
+import { usePreventScroll } from "@/hooks/usePreventScroll";
 
 const DialogContext = createContext<boolean | undefined>(undefined);
 
@@ -12,13 +14,20 @@ const useDialogContext = (componentName: string) => {
   return context;
 };
 
-type DialogProps = HTMLAttributes<HTMLDivElement>;
+type DialogProps = {
+  children: ReactNode;
+  className?: string;
+  onCloseDialog: () => void;
+};
 
-export const Dialog = ({ className, children, ...props }: DialogProps) => {
+export const Dialog = ({ className, onCloseDialog, children }: DialogProps) => {
+  usePreventScroll();
+
   return (
     <DialogContext.Provider value={true}>
-      <Overlay>
-        <div className={cn(className)} {...props}>
+      <Overlay onClose={onCloseDialog}>
+        <div className={cn("relative", className)}>
+          <XButton onClick={onCloseDialog} />
           {children}
         </div>
       </Overlay>

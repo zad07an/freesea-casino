@@ -13,9 +13,9 @@ export const CoinWithLabel = ({ image, label, ringColor }: Props) => {
         src={image}
         alt="coin 4"
         className={cn(
-          "ring-2 size-[30px] aspect-square ring-offset-2 rounded-full ring-offset-primary-background",
-          `ring-[${ringColor}]`
+          "ring-2 size-[30px] aspect-square ring-offset-2 rounded-full ring-offset-primary-background"
         )}
+        style={{ boxShadow: `0 0 0 2px ${ringColor}` }}
       />
       <span className=" text-sm font-semibold line-clamp-1">{label}</span>
     </div>
