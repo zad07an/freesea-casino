@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/CustomButton";
 import { Input } from "@/components/ui/Input";
 
 export const RegisterForm = () => {

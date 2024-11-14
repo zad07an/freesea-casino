@@ -1,5 +1,5 @@
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/CustomButton";
 import { useAuthStore } from "@/store/useAuthStore";
 
 export const PublicNavbar = () => {

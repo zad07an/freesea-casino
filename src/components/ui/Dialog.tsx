@@ -1,4 +1,4 @@
-import cn from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { createContext, HTMLAttributes, ReactNode, useContext } from "react";
 import { Overlay } from "./Overlay";
 import { XButton } from "./XButton";

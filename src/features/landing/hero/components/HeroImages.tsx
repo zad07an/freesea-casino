@@ -5,7 +5,7 @@ import etherium from "@/assets/resources/etherium.svg";
 import galaxyTab from "@/assets/resources/Galaxy Tab S8 Ultra 1.svg";
 import phone from "@/assets/resources/iphone-x-mockup 1.svg";
 import macbook from "@/assets/resources/MacBook Pro 16-inch Space Black Front 1.svg";
-import cn from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 interface Props {

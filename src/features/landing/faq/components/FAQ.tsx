@@ -1,5 +1,6 @@
 import { ListItems } from "@/components/ListItems";
 import { FAQ_ITEMS } from "../constants/faq";
+import { FaqItem } from "./FaqItem";
 
 export const FAQ = () => {
   return (
@@ -8,24 +9,7 @@ export const FAQ = () => {
       <div className=" w-full max-w-screen-lg flex flex-col gap-4">
         <ListItems
           items={FAQ_ITEMS}
-          render={(item) => (
-            <div
-              key={item.id}
-              className=" w-full flex flex-col gap-3 rounded-lg pt-2 p-4 border-[0.5px] border-dotted border-[#E5E7EB] bg-[#161F2C]"
-            >
-              <p className=" font-black text-primary-blue">{item.title}</p>
-              <div className=" w-full flex flex-col gap-6">
-                <ListItems
-                  items={item.questions}
-                  render={(qItem, index) => (
-                    <p key={index} className=" font-semibold text-[#E8D0D0]">
-                      {qItem}
-                    </p>
-                  )}
-                />
-              </div>
-            </div>
-          )}
+          render={(item) => <FaqItem key={item.id} item={item} />}
         />
       </div>
     </section>

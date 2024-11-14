@@ -1,5 +1,5 @@
 import loading from "@/assets/resources/loading10.svg";
-import cn from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface Props {
   size?: number;

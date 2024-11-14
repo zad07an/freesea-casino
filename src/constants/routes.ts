@@ -6,6 +6,7 @@ const RootLayout = lazy(() => import("@/layouts/RootLayout"));
 
 // Pages
 const HomePage = lazy(() => import("@/pages/HomePage"));
+const DicePage = lazy(() => import("@/pages/DicePage"));
 
 export const ROUTES = [
   {
@@ -15,6 +16,10 @@ export const ROUTES = [
       {
         path: "/",
         Component: HomePage,
+      },
+      {
+        path: "/dice",
+        Component: DicePage,
       },
     ] as RouteObject[],
   },

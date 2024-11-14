@@ -1,9 +1,7 @@
-import { AliasOptions, defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import tsconfigPaths from "vite-tsconfig-paths";
 import path from "path";
-
-const root = path.resolve(__dirname, "src");
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
@@ -12,7 +10,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": root,
-    } as AliasOptions,
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 });

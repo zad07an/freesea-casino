@@ -1,4 +1,4 @@
-import cn from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes } from "react";
 import x from "@/assets/resources/x.svg";
 

@@ -1,5 +1,5 @@
 import { ListItems } from "@/components/ListItems";
-import cn from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { COINS_IMAGES, COINS_WITH_LABELS } from "../constants/coins";
 import { CoinWithLabel } from "./CoinWithLabel";
 

@@ -1,5 +1,5 @@
 import gaming from "@/assets/resources/image 64.svg";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/CustomButton";
 
 export const GamingCard = () => {
   return (

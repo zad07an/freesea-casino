@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
@@ -12,13 +13,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "blue-gradient": `linear-gradient(
-          91.43deg,
-          #dcebfe -10.58%,
-          #0183d1 -8.9%,
-          #0152c5 42.56%,
-          #07338d 115.68%
-        )`,
+        "blue-gradient":
+          "`linear-gradient(\n          91.43deg,\n          #dcebfe -10.58%,\n          #0183d1 -8.9%,\n          #0152c5 42.56%,\n          #07338d 115.68%\n        )`",
       },
       colors: {
         primary: {
@@ -37,8 +33,17 @@ export default {
       gridTemplateColumns: {
         128: "repeat(auto-fill, minmax(128px, 1fr))",
         200: "repeat(auto-fill, minmax(200px, 1fr))",
+        "minmax-150": "repeat(auto-fill, minmax(150px, 1fr))",
+      },
+      fontFamily: {
+        inter: "Inter",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
